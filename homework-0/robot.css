@@ -1,0 +1,142 @@
+.walle {
+  border: 1px solid grey;
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+
+.walle .head {
+  background-color: #bfbeba;
+  height: 75px;
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.7s ease-in-out;
+  -moz-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+.walle .head.head-left {
+  left: 140px;
+  border-radius: 10px 7px 50px 20px;
+}
+
+.walle .head.head-left.rotated {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.walle .head.head-right {
+  float: right;
+  right: 140px;
+  border-radius: 7px 10px 20px 50px;
+}
+
+.walle .head.head-right.rotated {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.walle .head .eye {
+  background-color: #281119;
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.walle .head.head-left .eye {
+  top: 3px;
+  right: 10px;
+  float: right;
+}
+
+.walle .head.head-right .eye {
+  top: 3px;
+  left: 10px;
+}
+
+.walle .neck {
+  background-color: #bfbeba;
+  transform: perspective(10px) rotateX(1deg);
+  height: 120px;
+  width: 36px;
+  left: 232px;
+  top: -60px;
+  position: relative;
+  border-radius: 2px;
+}
+
+.walle .body {
+  background-color: #f1b468;
+  border-radius: 2px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 150px;
+  top: -60px;
+}
+
+.walle .body .arm {
+  background-color: #bfbeba;
+  width: 70px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.walle .body .arm:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  border-top: 2px solid black;
+}
+
+.walle .body .arm.arm-left {
+  left: -20px;
+  top: 50px;
+}
+
+.walle .body .arm.arm-right {
+  float: right;
+  right: -20px;
+  top: 50px;
+}
+
+.walle .body .logo {
+  width: 116px;
+  height: 45px;
+  float: right;
+  position: relative;
+  top: 100px;
+  right: 10px;
+}
+
+.walle .foot {
+  background-color: #201921;
+  width: 80px;
+  height: 50px;
+  position: relative;
+  top: -60px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.walle .foot.foot-left {
+  left: 160px;
+}
+
+.walle .foot.foot-right {
+  float: right;
+  right: 160px;
+}
+
+.note {
+  color: grey;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 13px;
+}
