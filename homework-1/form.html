@@ -2,10 +2,50 @@
 <html>
   <head>
     <title>Forms</title>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
+    <h1>What's the answer?</h1>
+    <form>
+      <div class="form-group">
+        <label for="input-math">2 + 3 = ?</label>
+        <input type="text" class="form-control" id="input-math">
+      </div>
+
+      <div class="form-group">
+        <label for="input-amphibian">Which one is an amphibian?</label>
+        <select class="form-control" id="input-amphibian">
+          <option>dogs</option>
+          <option>cats</option>
+          <option>frogs</option>
+          <option>rabbits</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Favorite Color?</label><br>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="input-color-red" value="red"> Red
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="input-color-yellow" value="yellow"> Yellow
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="input-color-blue" value="blue"> Blue
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
 
     <script src="form.js"></script>
   </body>
