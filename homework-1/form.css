@@ -1,7 +1,28 @@
 body {
   margin: 2rem;
 }
+
 form {
   border: 1px solid green;
+  background-color: rgba(0, 128, 0, 0.15);
   padding: 2rem;
+}
+
+.form-image {
+  display: none;
+  margin: 2rem 0;
+}
+
+@media (max-width: 800px) {
+  form {
+    border-color: red;
+    background-color: rgba(128, 0, 0, 0.15);
+  }
+}
+
+@media (max-width: 400px) {
+  form {
+    border-color: blue;
+    background-color: rgba(0, 0, 128, 0.15);
+  }
 }

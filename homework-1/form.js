@@ -41,9 +41,13 @@ $(function() {
     validateCheckMeInput(errors);
 
     if (errors.length == 0) {
+      $('.form-image.good-form').show();
+      $('.form-image.bad-form').hide();
       console.log('VALID');
     } else {
-      alert(errors.join('\n'));
+      $('.form-image.good-form').hide();
+      $('.form-image.bad-form').show();
+      alert('Please correct the following errors:\n' + errors.join('\n'));
     }
   };
 
