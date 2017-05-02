@@ -8,44 +8,62 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>What's the answer?</h1>
-    <form>
-      <div class="form-group">
-        <label for="input-math">2 + 3 = ?</label>
-        <input type="text" class="form-control" id="input-math">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>What's the answer?</h1>
+        </div>
       </div>
-
-      <div class="form-group">
-        <label for="input-amphibian">Which one is an amphibian?</label>
-        <select class="form-control" id="input-amphibian">
-          <option>dogs</option>
-          <option>cats</option>
-          <option>frogs</option>
-          <option>rabbits</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Favorite Color?</label><br>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="input-color-red" value="red"> Red
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="input-color-yellow" value="yellow"> Yellow
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="input-color-blue" value="blue"> Blue
-        </label>
-      </div>
-
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Check me
-        </label>
-      </div>
-
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="input-math">2 + 3 = ?</label>
+              <input type="text" class="form-control" id="input-math">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="select-amphibian">Which one is an amphibian?</label>
+              <select class="form-control" id="select-amphibian">
+                <option>dogs</option>
+                <option>cats</option>
+                <option>frogs</option>
+                <option>rabbits</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Favorite Color?</label><br>
+              <label class="radio-inline">
+                <input type="radio" name="input-color" id="input-color-red" value="red"> Red
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="input-color" id="input-color-yellow" value="yellow"> Yellow
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="input-color" id="input-color-blue" value="blue"> Blue
+              </label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="check-me"> Check me
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <script src="form.js"></script>
   </body>
