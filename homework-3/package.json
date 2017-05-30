@@ -1,0 +1,25 @@
+{
+  "name": "homework-3",
+  "version": "1.0.0",
+  "description": "A jazzy clock",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_PATH=$NODE_PATH:$PWD/ watchify src/js/*.js -o public/js/app.bundle.js -dv & serve public & npm run watch-css",
+    "build-css": "node-sass --include-path src/scss src/scss/app.scss public/css/app.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Tyler Amos",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "serve": "^5.1.5",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "strftime": "^0.10.0"
+  }
+}
