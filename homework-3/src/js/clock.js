@@ -1,13 +1,12 @@
 $(function() {
   var strftime = require('strftime');
+  var TimeZone = require('./timezone');
 
   var $time = $('.time');
   var $button = $('.button');
 
-  var utc = false;
-
   var updateClockTime = function() {
-    var offset = utc ? 4 : 0;
+    var offset = TimeZone.utc ? 4 : 0;
     var date = new Date( new Date().getTime() + offset * 3600 * 1000)
 
     $time.find('.hours').text(strftime('%l', date));
@@ -16,14 +15,10 @@ $(function() {
     $time.find('.ampm').text(strftime('%p', date));
   };
 
-  var changeTimeZone = function() {
-    utc = !utc;
-    $button.toggleClass('pressed');
-  };
-
   $button.on('click', function(event) {
     event.preventDefault();
-    changeTimeZone();
+    TimeZone.change();
+    $button.toggleClass('pressed');
   });
 
   setInterval(updateClockTime, 1000);
