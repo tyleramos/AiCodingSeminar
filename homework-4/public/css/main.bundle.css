@@ -1,0 +1,32 @@
+body {
+  margin: 1em; }
+
+img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.1;
+  z-index: -1; }
+
+.quotes {
+  border: 1px solid gray; }
+
+input[type='text'] {
+  width: 600px;
+  font-size: 16px; }
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px; }
+  .button.clear {
+    background-color: red; }

@@ -1,0 +1,28 @@
+{
+  "name": "homework-4",
+  "version": "1.0.0",
+  "description": "Simpsons quote engine",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack --config=config/webpack.config.js",
+    "lint": "eslint src/js"
+  },
+  "author": "Tyler Amos",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.3",
+    "css-loader": "^0.28.4",
+    "sass-loader": "^6.0.5",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
